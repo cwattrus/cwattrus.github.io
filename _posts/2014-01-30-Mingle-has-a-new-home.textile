@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Fresh New Mingle Starts Today
+title: Mingle has a new home
 author: Craig Wattrus
 gravatar: 80d4ab7b14defc23059f9c8eb349cf45
 ---

@@ -1,7 +1,13 @@
 ---
 layout: default
 ---
-<h2>{{ page.title }}</h2>
+<h2 class="blog-title">{{ page.title }}</h2>
+<small>
+  <em>Posted by</em>
+  <img class="post-author-image" src="http://www.gravatar.com/avatar/{{ page.gravatar }}.png?s=40">
+  {{ page.author }}
+</small>
+<hr />
 <div class="blog-body">
   {{ page.content | textilize }}
 </div>

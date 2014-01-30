@@ -1,0 +1,104 @@
+<html ng-app>
+  <head>
+    <title>Don't be misled by your A/B testing - Part 1 | Mingle</title>
+    <script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="application.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='/style.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <a href="/"><img src="/media/img/logo.png"></a>
+        <nav>
+          <ul>
+            
+            
+            
+  
+    
+      <li><a href="/design.html">Design</a></li>
+    
+  
+
+  
+    
+      <li><a href="/features.html">Features</a></li>
+    
+  
+
+  
+
+  
+    
+      <li><a href="/our_community.html">Community</a></li>
+    
+  
+
+  
+    
+      <li><a href="/posts.html">Blog</a></li>
+    
+  
+
+  
+    
+      <li><a href="/pricing.html">Pricing</a></li>
+    
+  
+
+  
+    
+      <li><a href="/try.html">Try Now</a></li>
+    
+  
+
+
+
+          </ul>
+         <!--  <ul>
+            <li class="selected">Home</li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="/posts.html">Blog</a></li>
+            <li><a href="#">Community</a></li>
+          </ul> -->
+          <div class="clear"></div>
+        </nav>
+      </header>
+      <h2 class="blog-title">Don't be misled by your A/B testing - Part 1</h2>
+<small>
+  <em>Posted by</em>
+  <img class="post-author-image" src="http://www.gravatar.com/avatar/80d4ab7b14defc23059f9c8eb349cf45.png?s=40">
+  Huimin Li
+</small>
+<hr />
+<div class="blog-body">
+  <p><b>Isn&#8217;t A/B testing just &#8220;40% is better than 30%&#8221;?</b><br />
+You have a product and want to encourage more people to complete a specific task. You have 2 ideas, you decide to A/B test them to see which is better. So, you put your users into two groups (A and B) where each group sees a different solution, and then measure which group is more successful at completing the task. After 200 total tests, 30 out of 100 people in Group A completed the task, while 40 out of 100 people in Group B completed the task.</p>
+<p>The answer is obvious: B is better than A, right?</p>
+<p>Not necessarily.</p>
+<p><b>Why can&#8217;t I simply compare 40% with 30%?</b></p>
+<p>Let&#8217;s take a look at group A. In this group, you observe 30 successful outcomes. However, it is just one observed number. If you run the experiment again, you may see 35 or 22. If you do it many times, the number of successful outcomes follows the Normal Distribution curve.</p>
+<p><img src="http://www.thoughtworks.com/sites/default/files/assets/huimin-abtest-1.png" /><br />
+See the shadowed part of the image above? 95.45% of the possibilities fall into an interval, which statisticians call the Confidence Interval. For our example, we can get the confidence interval for each group using a standard formula.</p>
+<p>Group A: [21%, 39%]</p>
+<p>Group B: [30%, 50%]</p>
+<p>What does this mean? It means that although you observed 30% for group A, and 40% for group B, the possible result is [21% ~ 39%] for A and [30% ~ 50%] for B. Do you still think group B is definitely better than A?</p>
+<p>Maybe not.</p>
+<p><b>What should I do then?</b></p>
+<p>Now you see it&#8217;s not simply about comparing two numbers, but comparing two intervals. At a certain point the two number intervals become far enough apart to be able to tell that one is better than the other. The fancy word statisticians use for this is Statistical Significance. They use a concept called p-value to measure it.</p>
+<p>P-value is the possibility that your observed result is <b><span class="caps">MISLEADING</span></b> you. In our case, the p-value is the possibility that Group B is not better than Group A. The lower the p-value is, the higher is the confidence about your assumption. A classic inverse relationship :)</p>
+<p>Let&#8217;s look at these pictures:</p>
+<p><img src="http://www.thoughtworks.com/sites/default/files/assets/huimin-abtest-2_0.png" title="pvalues" alt="pvalues" /></p>
+<p><img src="http://www.thoughtworks.com/sites/default/files/assets/huimin-abtest-3_0.png" title="pvalues" alt="pvalues" /></p>
+<p><img src="http://www.thoughtworks.com/sites/default/files/assets/huimin-abtest-4.png" title="pvalues" alt="pvalues" /></p>
+<p>From the examples, you can see that the farther apart the two observed numbers are, the smaller the confidence intervals are, and the lower the p-value is.</p>
+<p>In practice, we suggest aiming for a p-value &lt; 0.05 to make your A/B testing decision. You can balance your desired statistical significance vs. the cost of A/B testing based on your own situation.</p>
+<p>Stay tuned for Part II to learn how to apply this in practice, where I&#8217;ll give an example to show you how to A/B test step-by-step.</p>
+</div>
+
+    </div>
+  </body>
+</script>

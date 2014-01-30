@@ -1,0 +1,33 @@
+<html ng-app>
+  <head>
+    <title>{{ page.title }} | Mingle</title>
+    <script type="text/javascript" src="bower_components/jquery/jquery.min.js"></script>
+    <script type="text/javascript" src="application.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
+    <link href='/style.css' rel='stylesheet' type='text/css'>
+  </head>
+  <body>
+    <div class="content">
+      <header>
+        <a href="/"><img src="/media/img/logo.png"></a>
+        <nav>
+          <ul>
+            {% assign pages_list = site.pages %}
+            {% assign group = 'navigation' %}
+            {% include pages_list %}
+          </ul>
+         <!--  <ul>
+            <li class="selected">Home</li>
+            <li><a href="#">Features</a></li>
+            <li><a href="#">Design</a></li>
+            <li><a href="#">Pricing</a></li>
+            <li><a href="/posts.html">Blog</a></li>
+            <li><a href="#">Community</a></li>
+          </ul> -->
+          <div class="clear"></div>
+        </nav>
+      </header>
+      {{ content }}
+    </div>
+  </body>
+</script>

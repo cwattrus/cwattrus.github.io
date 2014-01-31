@@ -7,5 +7,7 @@
     {% endif %}
   {% endif %}
 {% endfor %}
+  <li class="pull-right"><a href="#">Try Now</a></li>
+
 {% assign pages_list = nil %}
 {% assign group = nil %}

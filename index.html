@@ -1,35 +1,27 @@
 ---
 layout: default
-title: Home
+title: Blog
+group: navigation
 ---
-<div>
-  <h1>Easy to <span class="start"><a href="">start</a></span></h1>
-  <hr />
-  <p>
-    <strong>Mingle</strong> is the only tool you need to keep your agile software project going. No matter your flavor or preferences.
-  </p>
-  <button class="large primary">Try for free</button>
-  <hr />
-  <img src="media/img/card_wall.png" class="border content-width" />
-</div>
+<h1>The Blog</h1>
+<p>Come back often to get updates. Follow us <a href="https://twitter.com/thatsmingle" target="_blank" class="twitter">@thatsmingle</a> for real time updates.</p>
 <hr />
-<div>
-  <h1>Easy to <span class="change">change</span></h1>
-  <hr />
-  <p>
-    <strong>Mingle</strong> is the only tool you need to keep your software project going. No matter your flavor of agile or continuous.
-  </p>
-  <hr />
-  <img src="media/img/card_wall.png" class="border content-width" />
-</div>
- <hr />
-<div>
-  <h1>Easy to <span class="track">track</span></h1>
-  <hr />
-  <p>
-    <strong>Mingle</strong> is the only tool you need to keep your software project going. No matter your flavor of agile or continuous.
-  </p>
-  <hr />
-  <img src="media/img/card_wall.png" class="border content-width" />
-</div>
-
+<ul class="blog-post-list">
+  {% for post in site.posts %}
+    <li>
+      <h2 class="blog-title">
+        <a href="{{ post.url }}">{{ post.title }}</a>
+      </h2>
+      <small>
+        <em>Posted by</em>
+        <img class="post-author-image" src="http://www.gravatar.com/avatar/{{ post.gravatar }}.png?s=40">
+        {{ post.author }}
+      </small>
+      <div class="blog-excerpt">
+        {{ post.excerpt | textilize }}
+      </div>
+      <a class="button primary" href="{{ post.url }}">Read now</a>
+      <hr />
+    </li>
+  {% endfor %}
+</ul>

@@ -1,0 +1,19 @@
+---
+layout: post
+title: Fresh New Mingle Starts Today
+author: Craig Wattrus
+gravatar: 80d4ab7b14defc23059f9c8eb349cf45
+---
+
+<p>
+  You saw a preview of the new visual direction we'll be taking Mingle this year in my last post. Yeah, it's going to be pretty different but awesome.
+</p>
+<p>
+  We'll be sharing more soon about the what and, more interestingly, the why.
+</p>
+<p>
+  In the meantime, we've deployed a significant first step: lightening the colors up and flattening the UI. And no more orange! (The locations of buttons, features, etc hasn't changed...yet.)
+</p>
+<p><strong>The transformation starts today...</strong></p>
+
+<h3>What do you think? Tell us!</h3>

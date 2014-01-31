@@ -1,0 +1,22 @@
+---
+layout: post
+title: Where is Mingle's Design Heading
+author: Craig Wattrus
+gravatar: 80d4ab7b14defc23059f9c8eb349cf45
+---
+
+h3. Mingle has looked and felt similar for many years!
+
+Over the next few days and weeks you will see many changes to Mingle. We know... change is hard but the team working everyday to make Mingle more awesome understand this. We will be working closely with you and other users to make sure the changes bring happiness to everyone.
+
+You might - as a lot of our users do - use Mingle everyday. *Imagine a Mingle in which you and your work are put at the forefront.*
+
+Things you like and use most often surfacing to the top to ensure your day is a lot more unicorns and rainbows instead of grumpy cats and end of day cute baby animal binges just to keep your head up.
+
+--------
+
+h3. How will we do this?
+
+We're agile and very iterative and so we will change fast and quick. We'll try different approaches until we find one that works best.
+
+One thing won't change, and that is to include YOU in everything we do. We'll be reaching out to people using Mingle for help from color choices to testing new features to collaborating on the new look.

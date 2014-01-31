@@ -149,6 +149,7 @@ nav ul li a {
   letter-spacing: normal;
   text-transform: none;
   max-width: 700px;
+  line-height: 1em;
 }
 .blog-excerpt, .blog-body {
   font-weight: 300;
@@ -157,4 +158,9 @@ nav ul li a {
 }
 .blog-body {
   text-align: left;
+}
+
+.try-form {
+  border: none;
+  overflow: hidden;
 }

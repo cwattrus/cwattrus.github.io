@@ -2,17 +2,17 @@
 layout: post
 title: Don't be misled by your A/B testing - Part 1
 author: Huimin Li
-gravatar: 80d4ab7b14defc23059f9c8eb349cf45
+gravatar: 71c5b79935202ad66d6be69fa4a7229f
 ---
 
-**Isn't A/B testing just "40% is better than 30%"?**
+h3. Isn't A/B testing just "40% is better than 30%"?
 You have a product and want to encourage more people to complete a specific task. You have 2 ideas, you decide to A/B test them to see which is better. So, you put your users into two groups (A and B) where each group sees a different solution, and then measure which group is more successful at completing the task. After 200 total tests, 30 out of 100 people in Group A completed the task, while 40 out of 100 people in Group B completed the task.
 
 The answer is obvious: B is better than A, right?
 
 Not necessarily.
 
-**Why can't I simply compare 40% with 30%?**
+h3. Why can't I simply compare 40% with 30%?**
 
 Let's take a look at group A. In this group, you observe 30 successful outcomes. However, it is just one observed number. If you run the experiment again, you may see 35 or 22. If you do it many times, the number of successful outcomes follows the Normal Distribution curve.
 

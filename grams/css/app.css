@@ -914,13 +914,19 @@ a.tg_radio_on:hover i.icon-radio {
 .im_dialogs_search_field {
   font-size: 12px;
   line-height: normal;
-  background: #F2F2F2 url(../img/icons/IconsetW.png) -6px -205px no-repeat;
+  background: url(../img/icons/IconsetW.png) -6px -204px no-repeat;
   background-size: 42px 710px;
-  border: 1px solid #F2F2F2;
+  border: 0px solid #F2F2F2;
   border-radius: 3px;
   padding: 6px 20px 6px 30px;
   margin-bottom: 0;
   margin: 0;
+  width: 30px;
+  transition: all 0.2s linear;
+  float: right;
+}
+.im_dialogs_search_field:focus {
+  width: 100%;
 }
 .is_1x .im_dialogs_search_field {
   background-image: url(../img/icons/IconsetW_1x.png);
@@ -2288,7 +2294,7 @@ img.chat_modal_participant_photo {
   line-height: 17px;
 
   border: 0;
-  border-radius: 6px;
+  border-radius: 6px 6px 6px 0;
   -webkit-box-shadow: none;
   box-shadow: none;
   -webkit-transition: border-color ease-in-out 0.15s, box-shadow ease-in-out 0.15s;
@@ -3216,7 +3222,6 @@ ce671b orange
 }
 
 .im_dialogs_panel_dropdown .dropdown-toggle {
-  background: #F2F2F2;
   display: block;
   border-radius: 2px;
   overflow: hidden;
@@ -3543,6 +3548,9 @@ ce671b orange
 .im_dialog_user, .im_dialog_message_text {
   color: #6E6E6E;
 }
+.active .im_dialog_user {
+  font-size: 14px;
+}
 
 .tg_page_head .navbar-inverse .navbar-nav > li > a {
   color: #A4A4A4;
@@ -3559,7 +3567,14 @@ ce671b orange
   color: white;
 }
 
-.icon {
+.img-icon {
   width: 23px;
   height: 19px;
 }
+/*
+.im_dialog_photo {
+  opacity: 0;
+}
+.active .im_dialog_photo {
+  opacity: 1;
+}*/
